@@ -7,7 +7,7 @@
     "display": "fullscreen",
     "orientation": "portrait",
     "start_url": "index.html",
-    "categories": ["productivity", "utilities", "social"],
+    "categories": ["utilities", "social"],
     "description": "Dados meteorológicos",
     "icons": [
         {
@@ -64,23 +64,9 @@
     "screenshots": [
         {
             "src": "img/screenshot.webp",
-            "sizes": "1280x720",
-            "type": "image/webp",
-            "form_factor": "wide",
-            "label": "Consulta de endereço por TEMPO"
-        },
-        {
-            "src": "img/screenshot2.webp",
-            "sizes": "750x1334",
+            "sizes": "385x684",
             "form_factor": "narrow",
-            "label": "Consulta de endereço por TEMPO"
-        },
-        {
-            "src": "img/screenshot.webp",
-            "sizes": "1280x720",
-            "type": "image/webp",
-            "platform": "ios",
-            "label": "Consulta de endereço por TEMPO"
+            "label": "Dados meteorológicos"
         }
     ]
 }
