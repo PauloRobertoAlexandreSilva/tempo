@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+<head>
+    <title>TEMPO</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="Content-Language" content="pt-BR">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+    <meta name="author" content="Paulo Roberto Alexandre da Silva">
+    <meta name="description" content="Consulta dados meteorológicos">
+    <meta name="keywords" content="html, css, javascript, tempo, consulta, dados, meteorológicos, webservice">
+    <meta name="theme-color" content="#0088D4">
+
+    <meta name="application-name" content="TEMPO">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="full-screen" content="yes">
+    <meta name="browsermode" content="application">
+    <meta name="screen-orientation" content="portrait">
+
+    <meta name="msapplication-TileImage" content="img/icon_512.png">
+    <meta name="msapplication-TileColor" content="#0088D4">
+    <meta name="msapplication-navbutton-color" content="#0088D4">
+    <meta name="msapplication-tooltip" content="TEMPO">
+    <meta name="msapplication-starturl" content=".">
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <meta name="format-detection"       content="telephone=yes">
+
+    <meta name="apple-mobile-web-app-capable"          content="yes"> <!-- Esconder interface do Safari -->
+    <meta name="apple-mobile-web-app-title"            content="TEMPO">
+    <meta name="apple-mobile-web-app-status-bar"       content="#0088D4">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-transparent">
+    
+    <link rel="apple-touch-icon-precomposd"  href="img/icon_192.png">
+    <link rel="apple-touch-icon" href="img/icon_96.png">
+    <link rel="apple-touch-icon" href="img/icon_57.png"  sizes="57x57">
+    <link rel="apple-touch-icon" href="img/icon_60.png"  sizes="60x60">   <!-- Especifica o ícone do Web App no iphone -->
+    <link rel="apple-touch-icon" href="img/icon_72.png"  sizes="72x72">
+    <link rel="apple-touch-icon" href="img/icon_76.png"  sizes="76x76">   <!-- Especifica o ícone do Web App no ipad -->
+    <link rel="apple-touch-icon" href="img/icon_114.png" sizes="114x114">
+    <link rel="apple-touch-icon" href="img/icon_120.png" sizes="120x120"> <!-- Especifica o ícone do Web App no iphone-retina -->
+    <link rel="apple-touch-icon" href="img/icon_128.png" sizes="128x128">
+    <link rel="apple-touch-icon" href="img/icon_144.png" sizes="144x144">
+    <link rel="apple-touch-icon" href="img/icon_152.png" sizes="152x152"> <!-- Especifica o ícone do Web App no ipad-retina -->
+    <link rel="apple-touch-icon" href="img/icon_180.png" sizes="180x180">
+    <link rel="apple-touch-icon" href="img/icon_192.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="img/icon_384.png" sizes="384x384">
+    <link rel="apple-touch-icon" href="img/icon_512.png" sizes="512x512">
+
+    <!-- splash screen -->
+    <link rel="apple-touch-startup-image" href="https://placehold.co/320x480/0088D4/FFB001/png?text=TEMPO">
+    <link rel="apple-touch-startup-image" href="https://placehold.co/320x460/0088D4/FFB001/png?text=TEMPO"   media="(device-width: 320px)">
+    <link rel="apple-touch-startup-image" href="https://placehold.co/640x920/0088D4/FFB001/png?text=TEMPO"   media="(device-width: 320px)  and (-webkit-device-pixel-ratio: 2)">
+    <link rel="apple-touch-startup-image" href="https://placehold.co/768x1004/0088D4/FFB001/png?text=TEMPO"  media="(device-width: 768px)">
+    <link rel="apple-touch-startup-image" href="https://placehold.co/748x1024/0088D4/FFB001/png?text=TEMPO"  media="(device-width: 748px)">
+    <!-- iPhone 5 (640px x 1136px) -->
+    <link rel="apple-touch-startup-image" href="https://placehold.co/640x1136/0088D4/FFB001/png?text=TEMPO"  media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)">
+    <link rel="apple-touch-startup-image" href="https://placehold.co/750x1294/0088D4/FFB001/png?text=TEMPO"  media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)">
+    <!-- iPhone 8, 7, 6s, 6 (750px x 1334px) -->
+    <link rel="apple-touch-startup-image" href="https://placehold.co/750x1334/0088D4/FFB001/png?text=TEMPO"  media="(device-width: 375px)  and (device-height: 667px)   and (-webkit-device-pixel-ratio: 2)">  
+    <link rel="apple-touch-startup-image" href="https://placehold.co/2048x1496/0088D4/FFB001/png?text=TEMPO" media="(device-width: 1536px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)">
+    <link rel="apple-touch-startup-image" href="https://placehold.co/828x1792/0088D4/FFB001/png?text=TEMPO"  media="(device-width: 414px)  and (device-height: 896px)   and (-webkit-device-pixel-ratio: 2)"> 
+    <link rel="apple-touch-startup-image" href="https://placehold.co/1536x2008/0088D4/FFB001/png?text=TEMPO" media="(device-width: 1536px) and (-webkit-device-pixel-ratio: 2)">
+    <link rel="apple-touch-startup-image" href="https://placehold.co/1496x2048/0088D4/FFB001/png?text=TEMPO" media="(device-width: 1496px) and (-webkit-device-pixel-ratio: 2)">
+    <!-- iPad Mini, Air (1536px x 2048px) -->
+    <link rel="apple-touch-startup-image" href="https://placehold.co/1536x2048/0088D4/FFB001/png?text=TEMPO" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2)">
+    <link rel="apple-touch-startup-image" href="https://placehold.co/1242x2148/0088D4/FFB001/png?text=TEMPO" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3)">
+    <!-- iPhone 8 Plus, 7 Plus, 6s Plus, 6 Plus (1242px x 2208px) -->
+    <link rel="apple-touch-startup-image" href="https://placehold.co/1242x2208/0088D4/FFB001/png?text=TEMPO" media="(device-width: 414px)  and (device-height: 736px)    and (-webkit-device-pixel-ratio: 3)"> 
+    <!-- iPad Pro 10.5" (1668px x 2224px) -->
+    <link rel="apple-touch-startup-image" href="https://placehold.co/1668x2224/0088D4/FFB001/png?text=TEMPO" media="(device-width: 834px)  and (device-height: 1112px)   and (-webkit-device-pixel-ratio: 2)">     
+    <link rel="apple-touch-startup-image" href="https://placehold.co/1668x2388/0088D4/FFB001/png?text=TEMPO" media="(device-width: 834px)  and (device-height: 1194px)   and (-webkit-device-pixel-ratio: 2)"> 
+    <!-- iPhone X (1125px x 2436px) -->
+    <link rel="apple-touch-startup-image" href="https://placehold.co/1125x2436/0088D4/FFB001/png?text=TEMPO" media="(device-width: 375px)  and (device-height: 812px)    and (-webkit-device-pixel-ratio: 3)"> 
+    <link rel="apple-touch-startup-image" href="https://placehold.co/1242x2688/0088D4/FFB001/png?text=TEMPO" media="(device-width: 414px)  and (device-height: 896px)    and (-webkit-device-pixel-ratio: 3)"> 
+    <!-- iPad Pro 12.9" (2048px x 2732px) -->
+    <link rel="apple-touch-startup-image" href="https://placehold.co/2048x2732/0088D4/FFB001/png?text=TEMPO" media="(device-width: 1024px) and (device-height: 1366px)   and (-webkit-device-pixel-ratio: 2)"> 
+
+    <link rel="icon" href="img/icon_192.png" sizes="192x192">
+    <link rel="Shortcut Icon" type="img/ico" href="favicon.ico">
+    <link rel="icon" type="image/x-ico" href="favicon.ico">
+    <link rel="icon" type="image/png" href="img/icon_16.png">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Aplicativo -->
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nuvens.css">
+    <script src="src/install.js"></script>
+    <script src="src/weather.js"></script>
+    <script src="src/script.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+    <noscript>
+        Para completa funcionalidade é necessário habilitar o JavaScript.
+        Aqui estão as <a href="http://www.enable-javascript.com/pt/" target="_blank">
+        instruções de como habilitar o JavaScript no seu navegador</a>.
+    </noscript>
+
+    <div class="splash-logo"></div>
+
+    <div id="clouds">
+        <div class="cloud x1"></div>
+        <div class="cloud x2"></div>
+        <div class="cloud x3"></div>
+        <div class="cloud x4"></div>
+        <div class="cloud x5"></div>
+    </div>
+
+    <nav class="navbar fixed-top" data-bs-theme="light"">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="img/icon_32.png" alt="Logo" class="d-inline-block align-text-top">
+                <span class="bitcount-single-ink">TEMPO</span>
+            </a>
+            <div>
+                <button type="button" class="btn btn-info" id="buttonInstallApp"><i class="bi bi-file-arrow-down"></i></button>
+                <button type="button" class="btn btn-info" id="buttonShare"><i class="bi bi-share"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" style="margin: 80px 0 10px;">
+        <ul class="nav nav-pills" role="tablist">
+            <li class="nav-item"><a class="nav-link active" data-bs-toggle="pill" href="#divSuaLocalidade" style="color: white;">Sua localidade</a></li>
+            <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#divOutraLocalidade" style="color: white;">Outra localidade</a></li>
+        </ul>
+        <div class="tab-content" style="margin-top: 40px;">
+            <div id="divSuaLocalidade" class="container tab-pane active">
+                <div id="divPrevisao"></div>
+            </div>
+
+            <div id="divOutraLocalidade" class="container tab-pane fade">
+                <select id="estados" class="form-select"><option value='0'>SELECIONE O ESTADO</option></select>
+                <select id="municipios" class="form-select"><option value='0'>SELECIONE O MUNICÍPIO</option></select>
+                <div id="divOutraPrevisao"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="divAlerta" class="alert alert-danger">
+        <strong>Erro!</strong> TEMPO inválido.
+    </div>
+
+    <div class="row fixed-bottom" id="divFonte">
+        <div class="col-auto">Fontes:</div>
+        <div class="col-auto"><a target="_blank" href="https://viaTEMPO.com.br/">VIATEMPO</a></div>
+    </div>
+</body>
+</html>

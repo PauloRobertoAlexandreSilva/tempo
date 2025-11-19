@@ -1,0 +1,39 @@
+:root {
+    --cor1: #0088D4;
+    --cor2: #FFFFFF;
+    --cor3: #FFB001;
+    --cor4: #003954;
+}
+
+html, body {
+    overscroll-behavior-inline: none;
+    overscroll-behavior: none;
+    overflow: hidden;
+}
+
+body { background-color: var(--cor1); color: var(--cor2); font-weight: bolder; }
+input, button { font-weight: bolder !important;}
+nav, nav a span { background-color: var(--cor1); color:  var(--cor2); }
+select,input[type=text] { margin-bottom: 5px;}
+a { text-decoration: none; color: var(--cor3);
+}
+
+#divAlerta { display: none;}
+#divFonte {  background-color: var(--cor1); color: var(--cor4);}
+
+.splash-logo {
+    z-index: 99;
+    position: absolute;
+    width: 256px; height: 256px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url('../img/logo.png');
+    background-size: 256px 256px;
+    animation: blinker 2s linear;
+    opacity: 0;
+}
+@keyframes blinker {
+    0% { opacity: 100%; display: block;}
+    100% { opacity: 0; display: none;}
+}

@@ -1,0 +1,86 @@
+{
+    "name": "TEMPO",
+    "short_name": "TEMPO",
+    "app_name": "TEMPO",
+    "theme_color": "#0088D4",
+    "background_color": "#0088D4",
+    "display": "fullscreen",
+    "orientation": "portrait",
+    "start_url": "index.html",
+    "categories": ["productivity", "utilities", "social"],
+    "description": "Dados meteorológicos",
+    "icons": [
+        {
+            "src": "img/icon_60.png",
+            "sizes": "60x60",
+            "type": "image/png"
+        },
+        {
+            "src": "img/icon_72.png",
+            "sizes": "72x72",
+            "type": "image/png"
+        },
+        {
+            "src": "img/icon_96.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        },
+        {
+            "src": "img/icon_128.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        },
+        {
+            "src": "img/icon_144.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        },
+        {
+            "src": "img/icon_152.png",
+            "sizes": "152x152",
+            "type": "image/png"
+        },
+        {
+            "src": "img/icon_192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "img/icon_256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "img/icon_384.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        },
+        {
+            "src": "img/icon_512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "img/screenshot.webp",
+            "sizes": "1280x720",
+            "type": "image/webp",
+            "form_factor": "wide",
+            "label": "Consulta de endereço por TEMPO"
+        },
+        {
+            "src": "img/screenshot2.webp",
+            "sizes": "750x1334",
+            "form_factor": "narrow",
+            "label": "Consulta de endereço por TEMPO"
+        },
+        {
+            "src": "img/screenshot.webp",
+            "sizes": "1280x720",
+            "type": "image/webp",
+            "platform": "ios",
+            "label": "Consulta de endereço por TEMPO"
+        }
+    ]
+}

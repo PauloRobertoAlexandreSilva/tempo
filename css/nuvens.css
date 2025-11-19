@@ -1,0 +1,77 @@
+#clouds{
+    position: fixed;
+    left: 0; top: 0; width: 100vw; height: 100vh;
+    z-index: 0;
+}
+
+nav, nav div, .container { z-index: 5;}
+
+/*Time to finalise the cloud shape*/
+.cloud {
+	width: 200px; height: 60px;
+	background: #fff;
+	
+	border-radius: 200px;
+	-moz-border-radius: 200px;
+	-webkit-border-radius: 200px;
+	
+	position: relative; 
+}
+
+.cloud:before, .cloud:after {
+	content: '';
+	position: absolute; 
+	background: #fff;
+	width: 100px; height: 80px;
+	position: absolute; top: -15px; left: 10px;
+	
+	border-radius: 100px;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+	
+	-webkit-transform: rotate(30deg);
+	transform: rotate(30deg);
+	-moz-transform: rotate(30deg);
+}
+
+.cloud:after {
+	width: 120px; height: 120px;
+	top: -55px; left: auto; right: 15px;
+}
+
+.x1 {
+    top: 30vh;
+    transform: scale(1);
+    opacity: 0.4;
+    animation: moveclouds 15s linear infinite;
+}
+.x2 {
+    top: 35vh;
+	transform: scale(0.8);
+	opacity: 0.5;
+    animation: moveclouds 25s linear infinite;
+
+}
+.x3 {
+    top: 40vh;
+	transform: scale(0.6);
+	opacity: 0.6;
+    animation: moveclouds 35s linear infinite;
+}
+.x4 {
+	top: 40vh;
+	transform: scale(0.4);
+	opacity: 0.7;
+    animation: moveclouds 75s linear infinite;
+}
+.x5 {
+	top: 40vh;
+	transform: scale(0.2);
+	opacity: 0.8;
+    animation: moveclouds 50s linear infinite;
+}
+
+@keyframes moveclouds {
+	0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}
+}
