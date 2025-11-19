@@ -1,4 +1,4 @@
-## CEP
+## TEMPO
 
 Esse é um aplicativo que utiliza HTML5, CSS e Javascript para consultar o dados meteorológicos
 
