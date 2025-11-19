@@ -28,7 +28,7 @@ window.addEventListener('DOMContentLoaded', () => {
                     files: filesArray,
                     title: "CEP",
                     text: "Consulta de Endereço por CEP\n\n\n",
-                    url: "https://paulorobertoalexandresilva.github.io/cep/",
+                    url: "https://paulorobertoalexandresilva.github.io/tempo/",
                 };
 
                 if (!(navigator.canShare(shareData))) {
