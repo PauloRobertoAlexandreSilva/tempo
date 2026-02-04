@@ -1,12 +1,19 @@
 const lang = 'pt_br';
 const units = 'metric';
-const key = 'dbb5fa44c3dfe8a6096e18b5c88dc8fb';
 const baseurl = 'https://api.openweathermap.org/data/2.5';
 const api = '/weather';
-
-var param2 = '&appid=' + key + '&lang=' + lang + '&units=' + units
+var key = '';
+var param2 = '';
 
 window.addEventListener("DOMContentLoaded", function() {
+    key = getCookie("api.key");
+
+    if (key == '') {
+        key = prompt("KEY da API openweathermap", "Digite a KEY");
+        setCookie('api.key', key, 365);
+    }
+    param2 = '&appid=' + key + '&lang=' + lang + '&units=' + units;
+    
     const divPrevisao = document.getElementById("divPrevisao");
 
     navigator.geolocation.getCurrentPosition((position) => {
