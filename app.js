@@ -26,8 +26,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
                 const shareData = {
                     files: filesArray,
-                    title: "CEP",
-                    text: "Consulta de Endereço por CEP\n\n\n",
+                    title: "TEMPO",
+                    text: "Consulta dados meteorológicos\n\n\n",
                     url: "https://paulorobertoalexandresilva.github.io/tempo/",
                 };
 
